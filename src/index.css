@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "morris-roman";
+    font-display: swap;
+    src: url('./Assets/Fonts/MorrisRomanBlack.ttf');
+}
+
+@font-face {
+    font-family: "poppins";
+    font-display: swap;
+    src: url('./Assets/Fonts/Poppins-Regular.ttf');
+}
+
+@font-face {
+    font-family: "poppins-medium";
+    font-display: swap;
+    src: url('./Assets/Fonts/Poppins-Medium.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    @apply font-poppinsRegular;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(3fr, 1fr);
+    grid-row: 3fr;
+}
+
+.button {
+    @apply bg-gold hover:bg-white hover:text-black hover:underline hover:underline-offset-4 [text-decoration-color:#EE8B45] transition-all duration-150 font-poppinsMedium
+}
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.changing-text {
+    @apply top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 absolute text-center w-11/12 md:w-1/2 italic;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
